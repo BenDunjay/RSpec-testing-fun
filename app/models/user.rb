@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  validates_presence_of :password, :email
+
   def say_name
     self.name
   end
