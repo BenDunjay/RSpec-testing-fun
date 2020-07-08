@@ -1,0 +1,15 @@
+current directory: /Users/bendunjay/Desktop/rspec-course/RSpec-testing-fun/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/bendunjay/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/bendunjay/.rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200708-95812-1qml8du.rb extconf.rb
+creating Makefile
+
+current directory: /Users/bendunjay/Desktop/rspec-course/RSpec-testing-fun/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/bendunjay/Desktop/rspec-course/RSpec-testing-fun/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/bendunjay/Desktop/rspec-course/RSpec-testing-fun/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20200708-95812-x3guyr/skiptrace/internal

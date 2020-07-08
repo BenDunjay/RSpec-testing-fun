@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   validates_presence_of :password, :email
+  has_many :pets
 
   def say_name
     self.name
