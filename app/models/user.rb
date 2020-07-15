@@ -13,4 +13,25 @@ class User < ApplicationRecord
   def do_subtraction(a, b)
     a - b
   end
+
+  def is_even(number)
+    if number % 2 === 0
+      true
+    else
+      false
+    end
+  end
+
+  def is_equal(num, num_2)
+    num === num_2
+  end
+
+  def change_array_length(group, num)
+    array << num
+    array
+  end
+
+  def pet_animal
+    "My baby"
+  end
 end
