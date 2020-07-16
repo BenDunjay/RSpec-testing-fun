@@ -2,11 +2,11 @@ require "rails_helper"
 
 RSpec.describe Pet, type: :model do
   describe "#be_happy method" do
-    let(:owner) { double(User, :id => 2, :name => "Foo", :email => "foo@foo", :password => "Foo", pet_animal: true) }
+    let(:owner) { instance_double(User, id: 2, name: "Foo", email: "foo@foo", password: "Foo", pet_animal: true) }
     subject { described_class.new(name: "Petty", user_id: owner.id) }
     it "expects an owner to pet it" do
       expect(owner).to receive(:pet_animal)
-      subject.be_happy
+      expect(subject.be_happy(owner)).to eq("Purr")
     end
   end
 
