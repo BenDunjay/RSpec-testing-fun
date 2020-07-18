@@ -32,6 +32,6 @@ class User < ApplicationRecord
   end
 
   def pet_animal
-    "My baby"
+    true
   end
 end
