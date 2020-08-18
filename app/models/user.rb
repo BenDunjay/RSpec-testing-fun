@@ -27,8 +27,7 @@ class User < ApplicationRecord
   end
 
   def change_array_length(group, num)
-    array << num
-    array
+    group << num
   end
 
   def pet_animal

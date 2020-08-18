@@ -66,12 +66,11 @@ RSpec.describe User, type: :model do
   end
 
   describe "changes shopping array length" do
-    subject { described_class.new.change_array_length(array: [], num: 2) }
-    it "responds to a method with arguments" do
+    it "by responding to a method with arguments" do
       expect(subject).to respond_to(:change_array_length).with(2).arguments
     end
 
-    it "to not be empty" do
+    it "and tests it is not empty" do
       expect(subject.array.length).to be_empty
       array << num
       expect(subject.array.length).to eq(1)
