@@ -69,12 +69,6 @@ RSpec.describe User, type: :model do
     it "by responding to a method with arguments" do
       expect(subject).to respond_to(:change_array_length).with(2).arguments
     end
-
-    it "and tests it is not empty" do
-      expect(subject.array.length).to be_empty
-      array << num
-      expect(subject.array.length).to eq(1)
-    end
   end
 
   ##
